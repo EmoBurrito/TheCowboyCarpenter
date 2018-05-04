@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Cowboy Carpenter - Contact Me</title>
+		<meta charset="UTF-8" />
+		<meta name="description" content=""/>
+		<meta name="author" content="root" />
+		<meta name="keywords" content="unique, authentic, original, custom, carpentry, cowboy" />
+		<!-- I would have to rework all the CSS to get this to work
+		<meta name="viewport" content="width=device-width, initial-scale=1"/> -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css"/>
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+		<link href="css/lightbox.min.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="images/icons/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="144x144" href="icons/icon144.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="icons/icon114.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="icons/icon072.png" />
+		<link rel="apple-touch-icon"  href="icons/icon057.png" />
+		<link rel="image_src" itemprop="thumbnail" href="icons/icon064.png">
+		<meta property="og:title" content="The Cowboy Carpenter" />
+		<meta property="og:type" content="website" />
+		<!--<meta property="og:url" content="http://www.thecowboycarpenter.ca" />-->
+		<meta property="og:image" content="icons/icon120.png" />
+		<script src="//code.jquery.com/jquery-1.12.3.min.js"></script>
+		
+	</head>
+	
+	<body>
+		<header id="header"></header>
+		
+		<section>
+			<article class="split">
+				<h3>Fill Out a Quick Form</h3>
+				<p>
+					Just in case you are not quite sure what you want, you may want to fill out this form with suggestions from common. Of course these are only guidelines.
+					<strong>This is not an order form, only a suggestion form.</strong>
+				</p>
+				<form id="requestForm" class="form-horizontal" action="#" role="form">
+					<div class="form-group">
+						<label for="name" class="control-label col-sm-2 col-lg2">Name: </label>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-font" aria-hidden="true"></i></span>
+							<input type="text" id="name" name="name" class="form-control" role="textbox"/>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="phone" class="control-label col-sm-2 col-lg2">Phone: </label>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i></span>
+							<input type="text" id="name" name="name" class="form-control" role="textbox" />
+						</div>
+					</div>
+				
+					<br />
+				
+				<div class="form-group">
+					<label for="item" class="control-label col-sm-2 col-lg2">I would like a... </label>
+					<div class="col-sm-9 col-lg-8">
+						<div class="input-group">
+							<select id="item" name="item" class="form-control" role="listbox">
+								<option value="Cabinet">Cabinet</option>
+								<option value="Cupboard">Cupboard</option>
+								<option value="Table">Table</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</div>
+				</div>
+					
+				<div class="form-group">
+					<label for="material" class="control-label col-sm-2 col-lg2">Made of... </label>
+					<div class="col-sm-9 col-lg-8">
+						<div class="input-group">
+							<select id="material" name="material" class="form-control" role="listbox">
+								<option value="Oak">Oak</option>
+								<option value="Oak">Maple</option>
+								<option value="Pine">Pine</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="comments" class="control-label col-sm-2 col-lg2">Additional Comments </label>
+					<div class="col-sm-9 col-lg-8">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-pencil" aria-hidden="true"></i></span>
+							<textarea id="comments" name="comments" class="form-control" role="textbox"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-3 col-sm-9 col-lg-offset-2 col-lg-8">
+					<button class="btn btn-primary btn-sm" type="submit" role="button">
+						<i class="glyphicon glyphicon-ok" aria-hidden="true"></i>Submit
+					</button>
+					</div>
+					</div>
+				</div>
+				
+				</form>
+			</article>
+			<article class="split">
+				<h3>Or Send a Personalised E-mail</h3>
+				<p>If the form to the left doesn't convey all the information you'd like to say, feel free to send us an e-mail any time at 
+					<a href="mailto:thecowboycarpenter@outlook.com">thecowboycarpenter@outlook.com</a> or meet me in person at the
+					<a href="Map.html">coffee shop</a>.
+				</p>
+			</article>
+		</section>		
+		
+		<footer id="footer"></footer>
+		<script src="js/lightbox.min.js" ></script>
+		<script>
+			$(function () {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+				});		
+		</script>
+	</body>
+</html>

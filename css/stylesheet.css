@@ -1,0 +1,195 @@
+.flip
+{
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
+@font-face {
+    font-family: 'Gunfighter Academy';
+    src: url('/fonts/gunfighteracademy-regular-webfont.eot');
+    src: url('/fonts/gunfighteracademy-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    		url('/fonts/gunfighteracademy-regular-webfont.woff2') format('woff2'),
+         url('/fonts/gunfighteracademy-regular-webfont.woff') format('woff'),
+         url('/fonts/gunfighteracademy-regular-webfont.ttf') format('truetype'),
+         url('/fonts/gunfighteracademy-regular-webfont.svg#webfont') format('svg');
+         
+    font-weight: normal;
+    font-style: normal;
+}
+
+header, footer {
+	font-family: "Gunfighter Academy";		
+}
+
+body {
+	background: url(../images/parchment.jpg) top center repeat-y;
+	background-size: 100%;
+	/*margin-left: 25%;
+	margin-right: 25%;		
+	*/
+}
+
+header
+{
+	width: 80%;
+	margin: auto;
+}
+
+header p 
+{
+	text-align: center;
+}
+
+header .navbar{
+	display: none;
+}
+
+h3 {
+text-align: center; 
+font-size: 200%;
+font-weight: bold;
+text-decoration: underline;
+}
+
+nav {
+	text-align: center;
+	z-index: 2;
+}
+
+nav li {
+		text-align: center;
+		display: inline;
+}
+
+article {
+	min-width: 500px;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255,255, 255, 0.3);
+	/*More Space, Being defiant*/
+	clear: left;
+	margin: 5px;
+	overflow: hidden;
+}
+
+.split {
+	max-width: 45%;
+	float: left;
+	clear: none;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+article p
+{
+font-size: x-large;
+}
+
+figure {
+	border: 1px solid grey;
+	margin: 3px;
+	float: left;
+	max-width: 506px;
+}
+
+figure img {
+
+}
+
+figure figcaption {
+	border: 1px dotted grey;
+	text-align: center;
+}
+
+p.intro
+/*Still not working*/
+{
+	font-size: 200%;
+}
+
+section {
+	width: 60%;
+	margin: auto;
+}
+
+footer {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	clear: left;
+}
+
+form label{
+	display: block;
+}
+
+form select,textarea {
+	
+}
+
+.btn-primary {
+	background-color: #472121;
+	border-color: #472121;
+	float: none;
+}
+
+
+
+@media (max-width:999px){
+	section, header, footer {
+		width: 100%;	
+	}
+	
+	header h3, header p, nav {
+		display: none;	
+	}
+	
+	header .navbar {
+			display: inline;
+	}
+	
+header a {
+	color: white;
+}
+	
+.split{
+	max-width: 100%;
+}
+
+button{
+display: block;
+}
+
+article:first-of-type {
+	margin-top: 75px;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+}
+
+@media print{
+	figcaption{
+		display: none;	
+	}
+	article{
+		margin: 0;
+	}
+	
+
+	nav{
+		width: 100%	
+	}
+	
+}
